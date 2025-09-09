@@ -1,0 +1,27 @@
+{
+    "name": "teal_theme",
+    "type": "dark",
+    "colors": {
+        "window_bg_color": "#2b2b2b",
+        "frame_low": "#383838",
+        "frame_high": "#4b4b4b",
+        "button": {
+            "color": "#008080",
+            "hover": "#009999",
+            "pressed": "#007070"
+        },
+        "entry": {
+            "bg_color": "#3b3b3b",
+            "text_color": "#e0e0e0"
+        },
+        "text": {
+            "color": "#e0e0e0",
+            "link_color": "#008080",
+            "selection_color": "#008080"
+        },
+        "menu": {
+            "bg_color": "#3b3b3b",
+            "item_hover": "#008080"
+        }
+    }
+}

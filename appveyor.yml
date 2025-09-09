@@ -1,0 +1,19 @@
+version: 1.0.{build}
+image: Visual Studio 2019
+
+environment:
+  PYTHON: "C:\\Python39"
+  PYTHON_VERSION: "3.9.0"
+  PATH: "%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+
+install:
+- set PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%
+- choco install python --version %PYTHON_VERSION%
+- pip install pyinstaller
+
+build_script:
+- pyinstaller --onefile App/app.py
+
+artifacts:
+- path: dist\app.exe
+  name: my-app
